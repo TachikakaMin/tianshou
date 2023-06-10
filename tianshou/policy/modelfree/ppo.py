@@ -68,7 +68,7 @@ class PPOPolicy(A2CPolicy):
         dist_fn: Type[torch.distributions.Distribution],
         eps_clip: float = 0.2,
         dual_clip: Optional[float] = None,
-        value_clip: bool = False,
+        value_clip: bool = True,
         advantage_normalization: bool = True,
         recompute_advantage: bool = False,
         **kwargs: Any,
